@@ -1,7 +1,8 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
@@ -10,9 +11,14 @@
     text-decoration: none;
     list-style: none;
 }
+/* html{ */
+    /* font-size: 20px; */
+/* } */
 
 body {
     font-family: "Merriweather", serif;
+    /* font-family: "Fira Sans", sans-serif; */
+   
    
 }
 
@@ -23,46 +29,38 @@ footer {
     margin: 0 auto;
     padding: 3em 0.5em;
     text-align: center;
-
-    background: linear-gradient(to right, #333399, #ff00cc);
+    background: #134998;
 }
 
-header h1 {
-    color: #AAA;
-    font-size: 40px;
-    font-weight: lighter;
-    margin-bottom: 5px;
-}
+
 
 footer span {
     color: #AAA;
 }
 
 
+.labt h1{
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    font-size: 47px;
+    color:white;
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+
 nav {
-    /* LILA */
+    
     margin: 0 auto;
-    padding: 8em 3em;
-    background: linear-gradient(to right, #202057, #6c0959);
+    height: 292px;
+    background: #134998;
 }
 
 
 nav ul {
     display: flex;
-    /* float: right; */
-  /*   margin-right: 20px;
-    margin-top: -92px; */
-    background: linear-gradient(to right, #202057, #6c0959);
-    /* linear-gradient(to right, #333399, #ff00cc);  */
+    background: #134998;
     justify-content: center;
 }
-/* 
-nav ul li {
-
-   line-height: 80px;
-    margin: 0 25px;
-    
-} */
 
 .checkbtn {
     font-size: 30px;
@@ -74,42 +72,25 @@ nav ul li {
     display: none;
    }
 
-
 #check {
     display: none;
 }
 
-
-nav ul li a {
-    color: #c8bfbf;
-  font-size: 19px;
-    font-weight: 200;
-    text-transform: uppercase;
-}
-
-/*VERDE*/
-
-
-
-
-
 nav a {
-    color: #FFF;
+    font-weight: 200; 
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #c8bfbf;
     text-decoration: none;
-    font: 20px Raleway;
     margin: 0px 10px;
-    padding: 10px 10px;
+    padding: 5px 5px;
     position: relative;
     z-index: 0;
     cursor: pointer;
 }
 
-
-
-
 nav a:before,
 nav a:after {
-
     position: absolute;
     left: 0px;
     width: 100%;
@@ -136,80 +117,189 @@ nav a:hover:after {
     transform: translateY(0px);
 }
 
-main {
-     background-color: #607ae33b;  
-     display:flex;
-     flex-direction: row-reverse;
- 
-    
-}
 
 /* ------------------ HOME ----------------------------------*/
 
-.fotomiri{
-    max-width: 250px;
-    margin-left: 61px;
-    margin-top: 19px;
-    margin-right: 15px;
+main {
+    background-color:#fff;  
 }
-.fotomiri img{
-    width: 100%;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: black;
-}
-.estaesmiri{
-    display: flex;
-}
-.miricontainer{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-bottom: 50px;
-    margin-top: 15px;
-    
 
-}
-.thisismiritext {
-    font-weight: 600;
-    color: #000000c7;
-    padding: 52px;
-    font-size: 16px;
-    text-align: justify;
-    background-color: #fff;
-    margin: 18px 31px auto 60px;
-    padding: 40px;
-    border-radius: 10px;
+  .miriswork{
+    margin: 5% 25%;
+    font-size: 19px;
+    padding: 2%;
+   /*  text-align:left; */
+    /* background-color: #fff; */
+   /*  margin-top: 18px;
+    margin-left: 19px; */
+  
+   /*  border-radius: 10px;
     border-width: 10px;
     border-style: solid;
-    border-color: #202057;
+    border-color: #202057; */
     line-height: 30px;
-    display: none;
-}
-   .mail{
-    color: rgba(0, 0, 0, 0.678);
-   }
-   .mail:hover{
-    color: black;
-   }
+   /*  margin-bottom: 50px; */
    
-   
+  }
+  .miriswork h1{
+    line-height: 50px;
+    text-align: left;
+    margin-bottom: 27px;
+    font-size: 31px;
+    font-family: "Fira Sans", sans-serif;
+  }
+  .miriswork p{
+    text-align: left;
+    font-family: "Sawarabi Gothic", sans-serif;
+    
+  }
 
-.titular{
+  /*--- CURRENT PROJECTS ------------------------------------------*/
+
+  .currentprojects{
+    margin: 2% 25%;
+    font-size: 19px;
+    padding: 2%;
+    line-height: 30px;
     display: flex;
-    justify-content: space-evenly;
-   
-}
-.subtitulosmiri{
-    /* padding: 68px; */
+    flex-direction: column;
+  }
+  .currentprojects h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:#134998;
+    font-family: "Sawarabi Gothic", sans-serif;
+    margin-bottom: 97px;
+  }
+
+  .project1 h3{
+    margin-top: 16px;
+  } 
+  .currentprojects h3{
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-size: 18px;
+  }
+  .project1, .project2, .project3{
+    margin-bottom: 32px;
+    background-color: #00000005;
+    box-shadow: 2px 2px 2px #18191a8f;
+    padding: 5px 14px;
+  }
+  .project1 span, .project2 span, .project3 span{
+    font-size: 16px;
+  }
+  .project1, .project2, .project3{
+    font-family: "Fira Sans", sans-serif;
+  }
+  /*------------------------ PUBLICATIONS--------------*/
+  .publicationswrap {  /*aquest es igual que el currentprojects*/
+    margin: 2% 25%;
+    font-size: 19px;
+    padding: 2%;
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Sawarabi Gothic", sans-serif;
+    background-color: #13499814;
+    box-shadow: 0px 0px 25px #13499838;
+  }
+
+
+  .publicationswrap h1{  /*aquest es igual que el currentprojects h1*/
+    text-align: center;
+    text-transform: uppercase;
+    color: #134998;
+    font-family: "Sawarabi Gothic", sans-serif;
+    margin-bottom: 97px;
+  }
+  .publications {
+    margin-bottom: 69px;
+  }
+  .publications h3{
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-size:28px;
+    margin-bottom: 22px;
+    color:#13489859;
+  }
+  .publications a{
+    color:#134998 ;
     font-weight: 600;
-    line-height: 25px;
-    align-content: end;
-}
-.subtitulosmiri h1{
-    margin-bottom: 11px;
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-size: 23px;    
+  }
+
+  .publications a:hover{
+    color: #13489859;
+    transition: all 1s;
+  }
+  .publicationswrap p{
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .publicationswrap span{
+    font-size: 14px;
+  }
+  
+
+ 
+  
+
+
+
+/*------------------------------ MEMBERS -------------------------*/
+.allmembers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
+.foto {
+    width:200px;
+    margin-bottom: 34px;
+}
+.foto img{
+    max-width: 100%;
+}
+
+.member{
+    display: flex;
+    margin-top: 76px;
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-bottom: 20px;
+    background-color: #d2daf096;
+    padding: 20px;
+}
+
+.part1 {
+    font-family: "Fira Sans", sans-serif;
+}
+.subtitulos{
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.subtitulos p a{
+    font-size: 15px;
+}
+
+.thisistext {
+    font-weight: 300;
+    color: #000000c7;
+    font-size:  18px;
+    line-height: 24px;
+    /* display: none; */
+    margin-left:15px; 
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+
+.mail{
+    color: rgba(0, 0, 0, 0.678);
+}
+.mail:hover{
+    color: black;
+}
+
+/* 
 .button-74 {
     margin-top:5px;
     background-color: #fbeee0;
@@ -220,15 +310,15 @@ main {
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    font-size: 18px;
-   
-    line-height: 50px;
+    font-size: 15px;
+    line-height: 37px;
     text-align: center;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     min-width: 120px;
+    width:170px;
     padding: 0 25px;
   }
   
@@ -239,56 +329,175 @@ main {
   .button-74:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
+  } */
+
+  /*-------------------------news and Photo Gallery------------------*/
+
+
+
+  
+  .news {
+    font-family: "Sawarabi Gothic", sans-serif;
+    padding:15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-top: #134998;
+    border-top-width: 10px;
+    border-top-style: solid;
+    margin-top: 60px;
+    margin-right: 441px;
+  }
+  .news h1{
+    text-align: center;
+    margin-bottom: 18px;
+    margin-top: 10px;
+  }
+  .fotoej{
+    width: 300px;
+  }
+  .fotoej img{
+    max-width: 100%;
   }
   
-  .miriswork{
-    width: 50%;
-    padding: 52px;
-    font-size: 19px;
-    text-align:left;
-    background-color: #fff;
-    margin-top: 18px;
-    margin-left: 19px;
-    padding: 40px;
-    border-radius: 10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: #202057;
-    line-height: 30px;
-    margin-bottom: 50px;
+  .textnews{
+    background-color: #080809d4;
+    color: #f0f8ffab;
+    padding: 12px;
+    margin: 0 10px;
   }
-  .miriswork h1{
-    line-height: 50px;
-    margin-bottom: 39px;
+  .bloc{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin-bottom: 70px;
+    align-items: center;
   }
+  .bloc.a{
+    margin-left: 30%;
+  }
+  .bloc.b{
+    margin-left: 50%;
+  }
+  
+ /*  .photogallery{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+   */
+  
+
  
+/*-------------------- MAX WIDTH 1169px  + 1004px  -------------------------------*/
+
+
+
+   
+
+
+
+
+@media (max-width: 1169px){
+    .miriswork{
+        margin: 5% 15%;
+    }
+    .part1 {
+        display:flex;
+    }
+    .member{
+        display: flex;
+        flex-direction: column;
+         margin-bottom: 10px;
+         padding: 10px;
+    }
+    .subtitulos{
+        margin-left:10px;
+    }
+    .thisistext{
+        margin-left: initial;
+    }
+
+}
+
+@media (max-width: 1004px){
+    .labt h1{
+        font-size:39px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+    .miriswork h1{
+        font-size: 25px;
+    }
+    .miriswork p{
+        font-size: 17px;
+    }
+    .currentprojects h1{
+        font-size: 28px;
+    }
+    .publicationswrap{
+        font-size: 17px;
+    }
+    .publications h3{
+        font-size: 26px;
+    }
+    .publications a{
+        font-size: 21px;
+    }
+    .publicationswrap p{
+        font-size: 16px;
+    }
+    .member{
+        margin-left: 15px;
+        margin-right: 15px
+    }
+    .subtitulos{
+        font-size:15px;
+    }
+    .foto {
+        width: 150px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 
 
 /*----------------------------------------------MAX WIDTH 810px ---------------*/
 
-
-/*-------------------------NAV (max 810px)-----------------------------*/
-@media (max-width: 810px) {
-    /*   header{
-        height:20px;
-    } */
+/*-------------------------NAV (max 828px)-----------------------------*/
+@media (max-width: 828px) {
+  
 
     nav{   
+        display: flex;
         height:151px;
         margin: 0;
         padding: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
         
     }
+    .checkbtn{
+        margin-right: 28px;
+    }
+
+    .checkbtn .fa::before{
+        font-size: 25px;
+    } 
 
     nav ul {
         flex-direction: column;
-        /* float: center; */
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: inherit;
-        background:  linear-gradient(#2c0653e5,#2c06539e);
+        margin-top: inherit 5%;
+        background:  #134998ed;
     }
 
     ul {
@@ -296,7 +505,7 @@ main {
         position: fixed;
         width: 100%;
         height: 100vh;
-        top: 84px;
+        top: 130px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -307,6 +516,11 @@ main {
         display: block;
         margin: 50px 0;
         line-height: 30px;
+    }
+    .labt h1{
+        font-size: 28px;
+        height: auto;
+        margin-left: 14px;
     }
 
     .checkbtn {
@@ -363,22 +577,121 @@ main {
         text-align: center;
         padding: 2px;
         border-width: 5px;
-
      }
+     .miriswork h1{
+        text-align: center;
+        line-height: 43px;
+        margin: 40px 2% auto 2%;
+        font-size: 22px;
+     }
+
+     .miriswork p{
+        margin: 5%;
+        text-align: center;
+        font-size: 16px;
+     }
+
      .titular{
         display: flex;
         flex-direction: column;
         align-items: first baseline;
      }
-     .fotomiri{
-        max-width: 149px;
-        margin-left:initial;
-     }
+    
      .subtitulosmiri{
         margin-left: 15px;
         margin-top: 15px;
      }
+
+
+     /*--------------------- RESEARCH PROJECTS----------------------*/
+     .currentprojects{
+        margin: 2% 13%;
+     }
      
+     .currentprojects h1{
+        font-size: 25px;
+        margin-bottom: inherit;
+     }
+     .project1, .project2, .project3{
+        padding: 0px;
+     }
+
+     /*---------PUBLICATIONS------*/
+     .publicationswrap{
+        margin: 2% 10%;
+        font-size: 15px;
+     }
+     .publications h3{
+        font-size: 24px;
+    }
+    .publications a{
+        font-size: 19px;
+    }
+    .publicationswrap p{
+        font-size: 14px;
+    }
+
+     /*---------------------MEMBERS------------*/
+     .allmembers {
+        display: flex;
+        flex-direction: column;
+     }
+     .subtitulos{
+        line-height: 18px;
+        font-size: 16px;
+        
+    }
+    .subtitulos p a{
+        font-size: 13px;
+    }
+    
+    .thisistext {
+        font-size:  16px;
+    }
+    .member{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /*-------------------------NEWS----------------------*/
+        .news {
+            padding:0px;
+            display: flex;
+            flex-direction: column;
+            border-top: #134998;
+            border-top-width: 5px;
+            border-top-style: solid;
+            margin-top: 10px;
+            margin-right: 0px;
+        }
+        .bloc{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+        align-items: center;
+        }
+        .bloc.a{
+            margin-left: 0px;
+          }
+          .bloc.b{
+            margin-left: 0px;
+          }
+          .fotoej{
+            width: 150px;
+          }
+    
+     
+}
+
+
+/*-----------------------------------------MAX WIDTH 463px-----------------*/
+
+@media (max-width: 463px){
+    .labt h1{
+        font-size: 28px;
+    }
 }
 
 

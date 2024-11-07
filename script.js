@@ -1,3 +1,8 @@
+
+
+
+
+
 //overflow hidden max width 800px
 
 function addRem() {
@@ -17,22 +22,27 @@ check.addEventListener("click", addRem)
 
 //function button text appears
 
-/* function functionText() {
-    const text = document.getElementById("textap");
-    console.log("funciona"); 
-    text.style.display = "block"; 
 
-} */
+/* var text = document.querySelectorAll(".thisistext")
+
+
+
+$(document).ready(function() {
+    text.forEach((element) => {
+        let button = element.previousElementSibling;
+        $(button).click(function() {
+            $(element).slideToggle(1000);
+        })
+    })
+}) */
+
+
+  
+
+        
+
+
+  
+
+
  
- $(document).ready(function(){
-    $("#btn").click(function(){
-       $(".thisismiritext").toggle(1000); 
-    });
-  });
-/* 
-  $(document).ready(function(){
-    $("button").click(function(){
-        console.log("Button clicked!"); // Check if the button is clicked
-    });
-});
- */
