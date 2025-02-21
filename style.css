@@ -1,0 +1,649 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* html{ */
+    /* font-size: 20px; */
+/* } */
+
+body {
+    font-family: "Merriweather", serif;
+    /* font-family: "Fira Sans", sans-serif; */
+   
+   
+}
+
+/*------------------- NAV, FOOTER ------------------*/
+
+footer {
+    font-family: "Sawarabi Gothic", sans-serif;
+    margin: 0 auto;
+    padding: 3em 0.5em;
+    text-align: center;
+    background: #134998;
+}
+
+
+
+footer span {
+    color: #AAA;
+}
+
+
+.labt h1{
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    font-size: 47px;
+    color:white;
+    font-family: "Sawarabi Gothic", sans-serif;
+}
+
+nav {
+    
+    margin: 0 auto;
+    height: 292px;
+    background: #134998;
+}
+
+
+nav ul {
+    display: flex;
+    background: #134998;
+    justify-content: center;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+   }
+
+#check {
+    display: none;
+}
+
+nav a {
+    font-weight: 200; 
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #c8bfbf;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 5px 5px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+nav a:before,
+nav a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+nav a:before {
+    top: 0px;
+    transform: translateY(10px);
+}
+
+nav a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+nav a:hover:before,
+nav a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+/*------------------- GENERAL ------------------*/
+
+.projects, .publicationswrap, .allmembers, .miriswork, .thisistext.contact, .wrap {
+    font-size: 19px;
+    line-height: 30px;
+    font-family: "Sawarabi Gothic", sans-serif;
+    padding: 2%;
+  }
+
+  
+.publicationswrap, .allmembers, .miriswork, .contact{margin:2% 25%;}
+.wrap{margin:2% 31%;}
+.thisistext {margin-left: 15px;}
+.current.projects{margin: 2% 25% 1%;}
+.previous.projects{margin: 1% 25%;}
+
+.project, .publications, .member {
+    padding: 23px 14px 27px;
+    margin-bottom: 25px; 
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
+.news{
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+.project, .publications{font-family: "Fira Sans", sans-serif;}
+.member{display:flex;padding-left: 0;}
+
+.publicationswrap span{
+    font-size: 14px;
+}
+.publication, .bloc {
+    margin-top: 38px;
+}
+.bloc{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 200px;
+  max-width:600px;
+}
+.contentnews{
+    align-self:center;
+}
+  .contactwrap, .locationwrap {
+    line-height: 25px;
+  }
+  .social-media{
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+  }
+  .icon-media{
+    width: 39px;
+    margin-left: 3px;
+   margin-right: 36px;
+  }
+
+  .miriswork h1, .publicationswrap h1, .projects h1, .allmembers h1, .wrap h1, .contact h1{
+    text-align: center;
+    text-transform: uppercase;
+    color:#134998;
+    font-family: "Sawarabi Gothic", sans-serif;
+    margin-bottom: 97px;
+  }
+  
+  .miriswork h2, .contact h2{
+    line-height: 50px;
+    text-align: left;
+    margin-bottom: 27px;
+    font-size: 31px;
+    font-family: "Fira Sans", sans-serif;
+  }
+  .bloc h2{
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 44px;
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    margin-bottom: 11px;
+  }
+  .contact h2{margin-bottom: 0px; margin-top: 26px;}
+   .projects h3{
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-size: 18px;
+  }
+  .publicationswrap h3, .news h3{
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-size: 28px;
+    margin-bottom: 22px;
+    color:#01040859;
+  }
+.miriswork p, .contact p, .textnews p{
+    text-align: left;
+    font-family: "Sawarabi Gothic", sans-serif; 
+}
+.textnews p{font-size:16px; line-height:25px}
+.project p,  .publicationswrap p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+.project p{font-weight:700;}
+.project span {
+    font-weight: 400;
+  }
+  .bloc small{
+    margin-bottom: 11px;
+  }
+.contactwrap a, .contactwrap p, .locationwrap p{
+    font-size:17px;
+}
+ a{
+    color:black;
+    font-weight: 600;
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-size: 15px;    
+  }
+   a:hover{
+    opacity: 0.6;
+    transition: all 0.5s;
+  }
+.foto {
+    width:200px;
+}
+.foto img{
+    max-width: 100%;
+} 
+.fotonews{
+    max-width: 600px;
+    position: relative;
+    margin-bottom: 22px;
+}
+.fotonews img{
+     width:100%;
+  } 
+#map{
+    width:400px;height:400px;z-index:1; margin-top: 10px; 
+}
+button{
+    width: 15%;
+    margin-top: 8px;
+}
+.all.publications{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.part1 {
+    font-family: "Fira Sans", sans-serif;
+}
+.subtitulos{
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.member.past{
+    flex-direction: column;
+}
+
+ 
+/*SLIDE*/
+
+
+/*Next & Previous Buttons*/
+.previ, .nexti {
+cursor: pointer;
+position: absolute;
+top: 50%;
+color: rgba(255, 255, 255, 0.705);
+font-size: 28px;
+transition: 0.6s ease;
+user-select: none;
+} 
+  /* Position the "next button" to the right */
+.nexti {
+right: 2px;
+} 
+.previ{
+left: 2px;
+}
+ .previ.dos, .nexti.dos{
+color: rgb(5, 5, 5);
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+ 
+   div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /*LUPA*/
+  .lens {
+    position: absolute;
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    display: none; /* Initially hidden */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+ 
+/*-------------------- MAX WIDTH 1169px  + 1004px  -------------------------------*/
+
+
+
+   
+@media (max-width: 1420px){
+    .miriswork, .current.projects, .previous.projects, .publicationswrap, .allmembers, .contact{
+        margin: 5% 15%;
+    }
+   
+}
+
+
+
+@media (max-width: 1169px){
+    .labt h1{
+        font-size:39px;
+    }
+    .miriswork h1, .current.projects h1, .previous.projects h1, .publicationswrap h1, .allmembers h1, .wrap h1, .contact h1{
+        font-size:32px;
+        margin-bottom: 70px;
+     }
+     .miriswork h2{
+        font-size: 28px;
+     }
+   
+  
+    
+
+}
+
+@media (max-width: 1004px){
+  
+    nav ul li a{
+        font-size: 17px;
+    }
+    .miriswork p, .thisistext{
+        font-size: 17px;
+    }
+   .publicationswrap{
+        font-size: 17px;
+    }
+    .wrap{
+        margin: 2% 13%;
+    }
+    .miriswork h2{
+        text-align: center;
+        line-height: 38px;
+    }
+    .publications h3{
+        font-size: 26px;
+    }
+    .publicationswrap p{
+        font-size: 16px;
+    }
+    .subtitulos{
+        font-size:15px;
+    }
+    
+}
+@media (max-width: 906px){
+    .labt h1{
+        font-size:36px;
+    }
+  
+}
+
+
+/*-------------------------NAV (max 828px)-----------------------------*/
+@media (max-width: 896px) {
+  
+
+    nav{   
+        display: flex;
+        height:151px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        
+    }
+    .checkbtn{
+        margin-right: 28px;
+    }
+
+    .checkbtn .fa::before{
+        font-size: 25px;
+    } 
+
+    nav ul {
+        flex-direction: column;
+        margin-top: inherit 5%;
+        background:  #134998ed;
+        justify-content: initial;
+    }
+
+    ul {
+
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 130px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 38px 0;
+        line-height: 6px;
+    }
+    .labt h1{
+         font-size: 28px;
+        height: auto;
+        margin-left: 14px; 
+    }
+    .checkbtn {
+        display: block;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+    #check:checked~main{
+        overflow: hidden;
+    }
+    #check:checked ~ .nav {
+        animation-play-state: paused;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 200%;
+        height: 200%;
+        transition: top 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),  
+                    right 350ms 700ms cubic-bezier(0.23, 1, 0.32, 1),
+                    transform 250ms 700ms ease,
+                    width 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1),
+                    height 750ms 1000ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+     /*--------------------home--------------------------------*/
+
+
+   
+     .miriswork, .current.projects, .previous.projects, .publicationswrap, .allmembers, .contact{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 12px;
+        border-width: 5px;
+    }
+   
+     
+     .miriswork h1, .current.projects h1, .previous.projects h1, .publicationswrap h1, .allmembers h1, .wrap h1, .contact h1{
+        text-align: center;
+        line-height: 43px;
+        margin: 40px 10%;
+        font-size: 22px;
+     }
+     .miriswork h2{
+        
+        font-size: 27px;
+        padding-left: 37px;
+        padding-right: 45px;
+        line-height: 39px;
+     }
+     .miriswork p{
+        margin: 5%;
+        text-align: left;
+        font-size: 17px;
+     }
+     .titular{
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+     }
+     .subtitulosmiri{
+        margin-left: 15px;
+        margin-top: 15px;
+     }
+
+
+     /*--------------------- RESEARCH PROJECTS----------------------*/
+     
+    
+     .project1, .project2, .project3{
+        padding: 0px;
+     }
+
+     /*---------PUBLICATIONS------*/
+    
+     .publications h3{
+        font-size: 24px;
+    }
+    button{
+        width: 21%;
+    }
+    .publication{
+        text-align: left;
+        padding:0;
+    }
+   
+
+     /*---------------------MEMBERS------------*/
+     .allmembers {
+        display: flex;
+        flex-direction: column;
+     }
+     .subtitulos{
+        line-height: 17px;
+        font-size: 16px; 
+        text-align: left;
+    }
+    .subtitulos p a{
+        font-size: 13px;
+    }
+    .thisistext {
+        font-size:  16px;
+        text-align:left;
+        padding:0;
+    }
+    .member{
+        display: initial;
+    }
+    .part1{
+        float:left;
+    }
+    .foto {
+        margin-right: 10px;
+    }
+   
+
+    /*-------------------------NEWS----------------------*/
+       .bloc h2{
+          font-size: 28px;
+          font-weight: 600;
+          line-height: 36px;
+       }
+      
+    }  
+
+
+
+
+/*---MAX WIDTH 463px---*/
+
+@media (max-width: 463px){
+    .wrap{
+        margin: 2% 2%;
+    }
+  .miriswork h2{font-size: 22px; line-height: 33px; padding-left: 0; padding-right: 0;}
+  .miriswork p, .textnews p{line-height: 26px;}  
+  .labt h1{
+        font-size: 23px;
+    }
+    .project p{
+        font-size:15px;
+    }
+    button{
+        width: 25%;
+    }
+    #map{
+        width: auto;
+    }
+    
+}
+
+/*---MAX WIDTH 414px---*/
+
+@media (max-width: 414px){
+ 
+    .miriswork h2{
+        font-size: 22px;
+    }
+}
+/*--MAX-WIDTH 396px--*/
+
+@media (max-width: 396px){
+    .member{
+        display: flex;
+        flex-direction: column;
+    }
+    .part1{
+        display:flex;
+        flex-direction: column;
+    }
+    .foto{
+        margin-left:15px;
+    }
+    .foto img{
+        width: 100%;
+    }
+    .subtitulos{
+        line-height:16px;
+        margin-left:17px;
+        margin-bottom: 7px;
+    }
+    .subtitulos p a{
+        font-size: 12px;
+    }
+    .thisistext{
+        font-size: 16px;
+        line-height:  26px;
+    }
+    .member.past{
+        flex-direction: column;
+    }
+}
+
+
+
